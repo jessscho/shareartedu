@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Display a map with a custom style</title>
+<title>Display a map on a webpage</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
@@ -17,9 +17,9 @@ body { margin: 0; padding: 0; }
 	mapboxgl.accessToken = 'pk.eyJ1IjoiamVzc2NobyIsImEiOiJjbDN5a3BwZ2QwOHVrM2tweHJ4czlzYWY3In0.U_0_PL-zTRJI74NiQM6WbA';
     const map = new mapboxgl.Map({
         container: 'map', // container ID
-        style: 'mapbox://styles/examples/cke97f49z5rlg19l310b7uu7j', // custom style url from https://studio.mapbox.com/
-        center: [41, 21], // starting position
-        zoom: 3 // starting zoom
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
     });
 </script>
 
